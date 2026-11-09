@@ -110,20 +110,18 @@ public class MidtermPractice {
      * @param head the head of the linked list.
      */
     public static boolean allPositive(ListNode head) {
-        return true;
+    ListNode current = head;
+
+    while (current != null) {
+        if (current.data <= 0) {
+            return false;
+        }
+
+        current = current.next;
     }
 
-    /**
-     * Returns the product of all values in a linked list or 1 if the head is null.
-     * @param head the head of the linked list
-     * @return the product of all values in a linked list or 1 if the head is null.
-     * Example Input: 5 -> 3 -> 4
-     * Example output: 60
-     * Explanation: 5 * 3 * 4 = 60
-     */
-    public static int product(ListNode head) {
-        return 1;
-    }
+    return true;
+}
 
     /**
      * CHALLENGE PROBLEM: take extra time for this problem if needed
