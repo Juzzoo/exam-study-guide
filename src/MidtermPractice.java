@@ -122,6 +122,18 @@ public class MidtermPractice {
 
     return true;
 }
+    public static int product(ListNode head) {
+    int result = 1;
+
+    ListNode current = head;
+
+    while (current != null) {
+        result = result * current.data;
+        current = current.next;
+    }
+
+    return result;
+}
 
     /**
      * CHALLENGE PROBLEM: take extra time for this problem if needed
